@@ -1,0 +1,64 @@
+STREAM OF THOUGHTS
+started writing code on 4th feb
+finished and finalized on 7th feb
+4 days
+made possible with good documentation of summer v1
+thank you past self !
+well anyway, great additions are made to summer v2
+with langchain, i can use ollama, gemini, openai, and i think pretty much many others
+but there is a lingering feeling that langchain abstracts away too much
+and this ends up with taking similar amounts of pain compared to real vendor docs
+also restricts us from doing some things, have to depend on langchain devs for new integrations
+the greatest thing about langchain is its easy to switch between integrations. very great to avoid vendor lockin
+i still feel though that langchain can improve some things
+rest, the project went pretty smooth albiet with some irritating problems (not even bugs) to which solution was elusive
+my pace was overall great. i learned from my mistake of v1 to not waste too much time on choosing and pondering
+i did ponder, but when its time to write code, i did. unexpected realizations arise when writing code
+NOTE - i feel that milvus is malfunctioning in some way. 'attention is all you need' link pops up many times unexpectedly, which is also my goto link. maybe rows arent unqiue all the time after all. it would be much better to make my own filesystem (tsv) for that purpose.
+the worst thing about abstractions and libs is you have to trust other's code, and when there is an elusive bug, its a hell lot of pain. you even doubt youself.
+
+THIS (in source!) ~
+$ pip install -U langchain-openai
+OK!
+$ fastapi dev app.py
+ModuleNotFoundError: No module named 'langchain_openai'
+$ deactivate
+$ pip install -U langchain-openai
+$ fastapi dev app.py
+OK!
+wtf was that ?
+
+ALSO THIS - milvus shy when running fastapi dev saying another instance is already open (also happens in flask). but works fine when using fastapi run. this may be due for security reasons tho.
+
+i realise that its time to start collecting good prompts
+
+NOTE - i did not have time to test out the best prompts for qwen. i stopped just when it was good enough. i could have went further (for good) but time is my enemy right now. also i had to use qwen prompts for gemini too. neither did i get to try other qwen variants (of diff size and others like qwen, qwen2)
+
+qwen 0.5 last try. also qwen2 is smaller than qwen2.5. smollm is schizo. also thanks china for saving the day. ollama quantizations worked good
+
+smollm just sucks tbh. huggingface shouldn't have used misleading statistics and SotA hype. disappointing really.
+
+NOTE - i have a feeling that outputs from lamini flan t5 were very comparable to qwen's, with lesser inference time. i really feel that t5 is very underrated model. flan t5 + bert could be a deadly combo
+
+apart from that it was my first time using git. i think that it slowed down my pace sometimes but nevertheless worth using cuz it saved my ass one time by reverting.
+
+THINGS I LEARNED IN THIS PROJECT
+git
+ollama - qwen, depseek r1
+langchain
+embedding models - snowflake-arctic-embed, all-minilm-v6
+vector databases - milvus
+
+i wanted to use openai api, entered bank details too but it was rejected. maybe cuz net banking is not enabled ? who knows.
+
+while it is pretty certain now that... hey i can make a surety calculator llm that will output confidance score 0-100 for sentences that use 'maybe', 'probably', 'definately'....
+ok so
+while it is pretty certain now that every word and punctutation i feed to system and user prompt affects its output, there is a notion that the choice of those words greately depend on the dataset the model was trained on too because some words resonate more with a specific model than others, so i must probe those words by either hit and trial, or get to know about the data it was trained on.
+
+overall, the project wasnt 'that' enjoyable thanks internal turmoil, recent stuff, and withdrawls
+or maybe it just wasnt novel enough but i was very excited about the idea of similar links at time of v1
+
+i need a good system. my laptop is getting old. i cannot take much stress
+need to learn javascript. it is important. especially chrome centric.
+
+i just realized something. i am pretty unfazed by bugs. coding comes as easy as breathing now.

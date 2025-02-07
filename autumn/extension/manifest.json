@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "Autumn",
+	"version": "2.0",
+	"description": "AI Webpage Analyzer",
+	"permissions": ["activeTab", "scripting"],
+	"host_permissions": ["http://localhost:8000/"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icon/icon16.png",
+			"48": "icon/icon48.png",
+			"128": "icon/icon128.png"
+		}
+	}
+}

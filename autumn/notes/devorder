@@ -1,0 +1,7 @@
+LOGICAL DEVELOPMENT ORDER - read source in this order and all will be obvious
+extension/manifest.json
+extension/popup.html
+extension/popup.js
+ollama/app.py
+gemini/app.py
+openai/app.py
