@@ -8,11 +8,11 @@
 
 #### Autumn in action
 
-![Autumn](./autumn.mp4)
+https://github.com/user-attachments/assets/cbfde0d9-180f-4d54-b6de-494ab6bbb735
 
 #### How to run
 
-0. Install dependencies in ./autumn/ai/requirements.txt
+0. Install dependencies in ./autumn/requirements.txt
 1. Provide Chrome path to the ./autumn/extension/ directory
 2. Choose any directory in ./autumn/ai/ and run ~
 ```bash
